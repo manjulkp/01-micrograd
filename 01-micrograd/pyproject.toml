@@ -1,0 +1,13 @@
+[project]
+name = "micrograd-autograd"
+version = "0.1.0"
+description = "A scalar autograd engine and small neural net, trained on hand-drawn 2D points"
+requires-python = ">=3.12"
+dependencies = ["matplotlib>=3.10"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
